@@ -20,7 +20,7 @@ def operasBas():
             <label>N2: </label>
             <input type="text" name="num2"/></br></br>
 
-            <input type="summit" value="calcular"/>
+            <input type="button" value="calcular"/>
             </form>
 
         '''

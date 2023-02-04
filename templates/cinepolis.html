@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/diseño.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/bootstrap/estilo.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <img src="../static/img/pngwing.com.png">
+            </div>
+        </div>
+        <form action="{{url_for('total')}}" class="formulario" method="post">
+            <input type="text" name="txtNombre"  placeholder="Nombre"/>
+            <input type="text" name="txtCantidadCompradores" placeholder="Cantidad Compradores"/>  
+            <div class="row">
+                <div class="col">
+                        <div>
+                            <fieldset>
+                                <p>Cuentas con Tarjeta Cineco??</p>     
+                                <div>
+                                    <label for="si">SI</label>
+                                  <input type="radio" id="si" name="drone" value="Si"
+                                         checked>
+                                  
+                                </div>     
+                                <div>
+                                  <label for="no">NO</label>
+                                  <input type="radio" id="no" name="drone" value="No">
+                                 
+                                </div>
+                            </fieldset> 
+                        </div>                                                                     
+                </div>
+            </div>
+            <input  type="text" name="txtBoletos" placeholder="Cantidad de Boletos" value=""/>
+            <button type="submit" class="btn btn-block btn-large btn-primary" >Comprar</button>
+            <label for="">El total es de {{resultado}}</label>
+        </form>
+    </div>
+
+</body>
+</html>
